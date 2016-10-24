@@ -1,41 +1,19 @@
 package com.company;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 class untitled3 {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        String ans="";
-        if(n>=1 && n<=100){
-            ans = "Weird";
-            if (n%2==1){
-                ans = "Weird";
-            }
-            else if(n>2 && n<5){
-                ans = "Not Weird";
-            }
-            else if(n>20) {
-                ans = "Not Weird";
-            }
-            else if(n>6 && n<20){
-                if (n%2==0){
-                    ans = "Weird";
-                }
-                else
-                    ans = "Not Weird";
-            }
+        int i = scan.nextInt();
+        double d = scan.nextDouble();
+        String s = scan.nextLine();
+        s = scan.nextLine();
 
-        }
-
-        System.out.println(ans);
-
-
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
     }
 }
